@@ -8,7 +8,7 @@ namespace WebApplication1.Models
 {
     public class dipendenti
     {
-        public int idDipendente { get; set; }
+       
 
         public string Nome { get; set; }
 
@@ -31,7 +31,7 @@ namespace WebApplication1.Models
 
         public dipendenti(int idDipendente, string Nome, string Cognome, string Indirizzo, string Codice_fiscale, bool Coniugato, bool Figli, string Mansione)
         {
-            this.idDipendente = idDipendente;
+            
             this.Nome = Nome;
             this.Cognome = Cognome;
             this.Indirizzo = Indirizzo;

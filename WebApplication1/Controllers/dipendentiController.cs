@@ -36,7 +36,7 @@ namespace WebApplication1.Controllers
                 {
                     // Crea un nuovo dipendente con i dati letti
                     dipendenti dipendente = new dipendenti(
-                    Convert.ToInt32(reader["Id"]),
+                    Convert.ToInt32(reader["idDipendente"]),
                     reader["Nome"].ToString(),
                     reader["Cognome"].ToString(),
                     reader["Indirizzo"].ToString(),
@@ -62,6 +62,8 @@ namespace WebApplication1.Controllers
             // Restituisce la vista con la lista di dipendenti
             return View(dipendentiList);
         }
+
+
 
         /// Questo metodo viene chiamato quando si accede alla pagina per creare un nuovo dipendente
         public ActionResult Create()
